@@ -3,32 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+
+    </style>
 </head>
-<h2>SỞ THÍCH CỦA BẠN</h2>
 <body>
 <form action="/action_page.php" method="post">
-        Họ và tên
-         <input type="text" name="yourname" ><br>
-         <br>
-        Email
-         <input type="text" name="email" ><br>
-        <label><input name="hobby" type="checkbox"/> Thể thao</label>
-        <label><input name="hobby" type="checkbox"/> Âm nhạc</label>
-        <label><input name="hobby" type="checkbox"/> Đọc sách</label> <br>
-        <label><input name="hobby" type="checkbox"/> Lướt web</label>
-        <label><input name="hobby" type="checkbox"/> Chơi game</label>
-        <label><input name="hobby" type="checkbox"/> Điện ảnh</label><br>
-        <label><input name="hobby" type="checkbox"/> Du lịch</label>
-        <p>
-        <input type ="button" name="btSubmit" value="Gửi thông tin"/>
-        <input type="reset" name="btReset" value="Nhập lại"/>
-        </p>
-    <style>
-        .wufoo {
-            font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
-        }
-    </style>
-    <form method="get" action="simpleform.html" class = "wufoo">
+    <table>
+        <tr><th colspan="5" style="background-color: darkorange;color: white;text-align: center">SỞ THÍCH CỦA BẠN</th></tr>
+        <tr>
+            <td>Họ và tên</td>
+            <td><input type="text" name="yourname" style="width: 150px"><br></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="text" name="email" style="width: 100px"></td><br>
+        </tr>
+        <tr>
+            <td>Sở thích</td>
+            <td><label><input name="hobby" type="checkbox"/> Thể thao</label>
+                <label><input name="hobby" type="checkbox"/> Âm nhạc</label>
+                <label><input name="hobby" type="checkbox"/> Đọc sách</label> <br>
+                <label><input name="hobby" type="checkbox"/> Lướt web</label>
+                <label><input name="hobby" type="checkbox"/> Chơi game</label>
+                <label><input name="hobby" type="checkbox"/> Điện ảnh</label><br>
+                <label><input name="hobby" type="checkbox"/> Du lịch</label>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td> <input type ="submit" name="btSubmit" value="Gửi thông tin"/>
+                <input type="reset" name="btReset" value="Nhập lại"/>
+            </td>
 </form>
 </body>
 </html>
