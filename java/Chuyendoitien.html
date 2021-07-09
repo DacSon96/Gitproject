@@ -13,23 +13,29 @@
           <th>To Current</th>
       </tr>
       <tr>
-          <td><input type="text" name="money" id="money123"></td>
+          <td><input type="text" name="money" id="money"></td>
           <td>
-              <select>
-                  <option value="VND">Việt Nam</option>
-                  <option value="USD">USD</option>
+              <select id="chuyentu">
+                  <option>Việt Nam</option>
+                  <option>USD</option>
               </select>
           </td>
           <td>
-              <select>
-                  <option value="USD">USD</option>
-                  <option value="VND">Việt nam</option>
+              <select id="chuyensang">
+                  <option>USD</option>
+                  <option>Việt Nam</option>
               </select>
           </td>
-          <td><input type="button" name="Convert" value="Convert" style="background-color: mediumpurple;color: white" </td>
+          <td><input type="button" value="Convert" style="background-color: mediumpurple;color: white" id="convert" onclick="chuyendoi()"></td>
       </tr>
-
   </table>
+    <table>
+        <tr>
+            <td><p style="color: blue">Result:</p> </td>
+            <td><input type="text" id="result" style="color: blue;border-color: white"></td>
+        </tr>
+    </table>
 </form>
+<script src="chuyendoitien.js"></script>
 </body>
 </html>
