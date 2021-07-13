@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style type="text/css">
+    td { color: blue; width: 1cm; height: 1cm; text-align: center}
+  </style>
+</head>
+<body>
+<form>
+  <table border="3">
+      <tr>
+        <td colspan="4" ><input style="text-align: right;background-color: white; border: 0cm" type="text" id="monitor" style="border: 0px" disabled></td>
+      </tr>
+      <tr>
+        <td><input id="1" type="button" value="1" onclick="document.getElementById('monitor').value += 1"></input></td>
+        <td><input id="2" type="button" value="2" onclick="document.getElementById('monitor').value += 2"></input></td>
+        <td><input id="3" type="button" value="3" onclick="document.getElementById('monitor').value += 3"></input></td>
+        <td><input id="+" type="button" value="+" onclick="document.getElementById('monitor').value += '+'"></input></td>
+      </tr>
+      <tr>
+        <td><input id="4" type="button" value="4" onclick="document.getElementById('monitor').value += 4"></input></td>
+        <td><input id="5" type="button" value="5" onclick="document.getElementById('monitor').value += 5"></input></td>
+        <td><input id="6" type="button" value="6" onclick="document.getElementById('monitor').value += 6"></input></td>
+        <td><input id="-" type="button" value="-" onclick="document.getElementById('monitor').value += '-'"></input></td>
+      </tr>
+    <tr>
+        <td><input id="7" type="button" value="7" onclick="document.getElementById('monitor').value += 7"></input></td>
+        <td><input id="8" type="button" value="8" onclick="document.getElementById('monitor').value += 8"></input></td>
+        <td><input id="9" type="button" value="9" onclick="document.getElementById('monitor').value += 9"></input></td>
+        <td><input id="x" type="button" value="x" onclick="document.getElementById('monitor').value += '*'"></input></td>
+      </tr>
+    <tr>
+        <td><input id="C" type="button" value="C" onclick="document.getElementById('monitor').value = ''"></input></td>
+        <td><input id="0" type="button" value="0" onclick="document.getElementById('monitor').value += 0"></input></td>
+        <td><input id="=" type="button" value="=" onclick="document.getElementById('monitor').value = eval(document.getElementById('monitor').value)"></input></td>
+        <td><input id="/" type="button" value="/" onclick="document.getElementById('monitor').value += '/'"></input></td>
+      </tr>
+  </table>
+  <script>
+    let a= document.getElementById('monitor').value;
+    a = 1;
+  </script>
+</form>
+</body>
+</html>
