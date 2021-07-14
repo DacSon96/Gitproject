@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let tiendien = prompt("Nhập tiền điện trong tháng(VNĐ)");
+    let sodien = prompt("Nhập số điện trong tháng(kWh)");
+    let giadien = tiendien / sodien;
+    if ((tiendien<0) ||(sodien<0)) {
+        alert("Số điện và tiền điện phải lớn hơn 0");
+    } else {
+        alert("Giá điện là " + giadien + " (VNĐ) trên 1 số điện (kWh)");
+    }
+</script>
+</body>
+</html>

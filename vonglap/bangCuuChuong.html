@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let kq;
+  kq = "<table border='1' width='100%' cellspacing='1'>";
+  for (let i = 1; i <=9; i++) {
+    kq = kq + "<tr>";
+    for (let j = 1; j <=9; j++) {
+        si = ""+i;
+        sj = ""+j;
+      kq = kq + "<td>"+si+"x"+sj+"="+ i * j + "</td>";
+    }
+    kq = kq + "</tr>";
+  }
+  kq = kq + "</table>";
+  document.write(kq);
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="radio" name="bob" onclick="copycheck('from','to');" />
+<input type="radio" name="bob" onclick="copycheck('from','to');" />
+<script>
+    function copycheck(from,to) {
+//retrives variables "from" (original checkbox/element) and "to" (target checkbox) you declare when you call the function on the HTML.
+
+        if(document.getElementById(from).checked==true)
+            //checks status of "from" element. change to whatever validation you prefer.
+        {
+            document.getElementById(to).checked=true;
+            //if validation returns true, checks target checkbox
+        }
+        else
+        {
+            document.getElementById(to).checked=false;
+            //if validation returns true, unchecks target checkbox
+        }
+    }
+</script>
+</body>
+</html>

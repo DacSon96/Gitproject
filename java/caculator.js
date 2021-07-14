@@ -1,21 +1,19 @@
-function Cong(){
-    let pt1 = document.getElementById('pt1').value;
-    let pt2 = document.getElementById('pt2').value;
-    let kq = parseInt(pt1) + parseInt(pt2);
-    document.getElementById('result').value = kq;
-}function Tru(){
-    let pt1 = document.getElementById('pt1').value;
-    let pt2 = document.getElementById('pt2').value;
-    let kq = parseInt(pt1) - parseInt(pt2);
-    document.getElementById('result').value = kq;
-}function Nhan(){
-    let pt1 = document.getElementById('pt1').value;
-    let pt2 = document.getElementById('pt2').value;
-    let kq = parseInt(pt1) * parseInt(pt2);
-    document.getElementById('result').value = kq;
-}function Chia(){
-    let pt1 = document.getElementById('pt1').value;
-    let pt2 = document.getElementById('pt2').value;
-    let kq = parseInt(pt1) / parseInt(pt2);
-    document.getElementById('result').value = kq;
+function result(){
+    let pt1 = parseInt(document.getElementById('pt1').value);
+    let pt2 = parseInt(document.getElementById('pt2').value);
+    let pheptinh = document.getElementById('pheptinh').value;
+    switch (pheptinh) {
+        case '+':
+            document.getElementById('result').innerHTML = pt1 + pt2;
+            break;
+        case '-':
+            document.getElementById('result').innerHTML = pt1 - pt2;
+            break;
+        case '*':
+            document.getElementById('result').innerHTML = pt1 * pt2;
+            break;
+        case '/':
+            document.getElementById('result').innerHTML = pt1 / pt2;
+            break;
+    }
 }

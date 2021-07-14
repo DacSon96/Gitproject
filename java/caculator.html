@@ -10,20 +10,24 @@
     <table>
         <tr>
             <td><input type="text" id="pt1"></td>
+            <td><select id="pheptinh">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select></td>
             <td><input type="text" id="pt2"></td>
         </tr>
     </table>
-    <table>
-        <tr>
-            <td><button type="button" onclick="Cong();">Addition(+)</button> </td>
-            <td><button type="button" onclick="Tru();">Subtraction(-)</button> </td>
-            <td><button type="button" onclick="Nhan();">Multiplication(X)</button> </td>
-            <td><button type="button" onclick="Chia();">Division(/)</button> </td>
-        </tr>
-    </table>
-    <br>
+    <input type="button" value="Result" onclick="result()"><br>
+        <br>
+<table>
+    <tr>
+        <td>Result Division
+        <td><p id="result"></p></td>
 
-    Result Division <input type="text" id="result">
+    </tr>
+</table>
 </form>
 <script src="caculator.js"></script>
 </body>

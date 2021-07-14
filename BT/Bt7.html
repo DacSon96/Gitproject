@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lai ngan hang</title>
+</head>
+<body>
+<script>
+  let sotien = prompt("Nhập số tiền ban đầu(VNĐ): ");
+  let sothang = prompt("Nhập số tháng cho vay");
+  let laixuat = prompt("Nhập lãi xuất hàng tháng(%):");
+  let tienlai = sotien * ((1+laixuat/100) ** sothang) - sotien;
+  alert('Số tiền lãi là: ' +tienlai+' (VNĐ)');
+</script>
+</body>
+</html>
