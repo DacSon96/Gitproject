@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let f1 = 0;
+  let f2 = 1;
+  let n = parseInt(prompt("Nhập số fibonacci cần tính tổng"));
+  let fn = f1 + f2;
+  let tong =f1;
+  for (let i = 1; i <=n ; i++) {
+    f1=f2;
+    f2=fn;
+    fn=fn+f1;
+    tong= tong+f1;
+  }
+  alert(tong);
+
+
+</script>
+</body>
+</html>

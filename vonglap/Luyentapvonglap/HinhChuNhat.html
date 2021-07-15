@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  for (let j = 0; j <=7 ; j++) {
+      if ((j==0) || (j==7)) {
+          for (let i = 0; i < 25; i++) {
+              document.write('*');
+          }
+      } else {
+          for (let k = 0; k < 25; k++) {
+              if (k==0) {
+                  document.write('*');
+              } else if (k<24) {
+                  document.write("&nbsp&nbsp");
+              } else {
+                  document.write('*');
+
+              }
+
+          }
+      }
+
+    document.write('<br>');
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let f1= 0;
+    let f2= 1;
+    let fn= f1 + f2;
+    do {
+        f1=f2;
+        f2=fn;
+        fn=f1+f2;
+    }
+    while (fn%5!=0);
+    alert('Số đầu tiên chia hết cho 5 trong dãy là: '+fn);
+</script>
+</body>
+</html>

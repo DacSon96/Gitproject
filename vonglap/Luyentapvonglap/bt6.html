@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tổng 30 số chia hết cho 7 đầu tiên</title>
+</head>
+<body>
+<script>
+  let sotong= parseInt(prompt('Nhập số cần tính tổng chia hết cho 7:'));
+  let dem =0;
+  let tong=0;
+  for (let i = 1; dem<sotong ; i++) {
+      if (i%7==0) {
+          dem =dem +1;
+          tong = tong +i;
+      }
+  }
+alert('Tổng các số chia hết cho 7 là: '+tong);
+</script>
+</body>
+</html>

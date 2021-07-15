@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh lai ngan hang</title>
+</head>
+<body>
+<!--Nhập tiền gửi ngân hàng-->
+<!--<input type="text" id="tiengui"><br><br>-->
+<!--Tiền lãi ngân hàng là: <p id="tienlai"></p>-->
+<script>
+    let tiengui = parseInt(prompt("Nhập số tiền gửi ngân hàng: "));
+    let sothang = parseInt(prompt("Nhập số tháng gửi tiền : "));
+    let laixuat = parseInt(prompt("Nhập lãi xuất ngân hàng hàng tháng(%) : "));
+    let laihangthang=0;
+    let tienlai=0;
+    for (let i = 1; i <=sothang ; i++) {
+        laihangthang = tiengui * laixuat/100;
+        tiengui = tiengui + laihangthang;
+        tienlai = tienlai + laihangthang;
+    }
+    alert('Tiền lãi ngân hàng là: '+tienlai);
+
+
+
+</script>
+</body>
+</html>
