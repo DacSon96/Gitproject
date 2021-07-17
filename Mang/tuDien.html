@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập từ cần dịch  <input type="text" id="tucandich">
+<input type="button" value="Dịch" onclick="dich()"><br>
+Kết quả: <p id="result"></p>
+<script>
+let a = ['dog','cat','door','book','table','apple'];
+let b = ['chó','mèo','cửa','sách','bàn','táo'];
+let tucandich= prompt("Nhập từ cần dịch: ");
+console.log(tucandich);
+let result='';
+    for (let i = 1; i < a.length; i++) {
+        if (tucandich == a[i]) {
+            result = b[i];
+            alert(b[i]);
+        }
+
+
+}
+
+</script>
+</body>
+</html>
