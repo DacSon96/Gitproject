@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Khoi tao so nguyen tinh tb</title>
+</head>
+<body>
+<script>
+    let n=parseInt(prompt("Nhập số phần tử trong mảng: "));
+    let a=[];
+    let max=0;
+    let tb=0;
+    let sum=0;
+    for (let i = 0; i < n; i++) {
+        a[i]=parseInt(prompt("Nhập phần tử thứ "+(i+1)+" trong mảng"));
+        sum+=a[i];
+        if (a[i]>max) {
+            max=a[i];
+        }
+    }
+    tb=sum/n;
+    alert("Giá trị lớn nhất trong mảng là: "+max+"");
+    alert("Giá trị trung bình là: "+tb);
+</script>
+</body>
+</html>

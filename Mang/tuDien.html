@@ -2,27 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Từ điển tiếng Việt</title>
 </head>
 <body>
-Nhập từ cần dịch  <input type="text" id="tucandich">
-<input type="button" value="Dịch" onclick="dich()"><br>
-Kết quả: <p id="result"></p>
+<table>
+<tr>
+    <td>Dịch từ</td>
+    <td><select id="dichtu">
+            <option value="TA">Tiếng Anh</option>
+            <option value="TT">Tiếng Trung</option>
+            <option value="TV">Tiếng Việt</option>
+    </select></td>
+    <td>sang <select id="dichsang">
+        <option value="TV">Tiếng Việt</option>
+        <option value="TT">Tiếng Trung</option>
+        <option value="TA">Tiếng Anh</option>
+    </select></td>
+    <td></td>
+<tr>
+    <td></td>
+
+</tr>
+    <td>Từ cần dịch</td>
+    <td colspan="3"><input type="text" id="search">
+    <td> <input type="button" value="Dịch" onclick="dich()"><br></td>
+    <tr><br></tr>
+<tr>
+    <td>Kết quả là: </td>
+    <td><p id="result"></p></td>
+</tr>
+</table>
 <script>
-let a = ['dog','cat','door','book','table','apple'];
-let b = ['chó','mèo','cửa','sách','bàn','táo'];
-let tucandich= prompt("Nhập từ cần dịch: ");
-console.log(tucandich);
-let result='';
-    for (let i = 1; i < a.length; i++) {
-        if (tucandich == a[i]) {
-            result = b[i];
-            alert(b[i]);
-        }
+    function dich() {
+    let TA = ['dog', 'cat', 'door', 'book', 'table', 'apple'];
+    let TV = ['chó', 'mèo', 'cửa', 'sách', 'bàn', 'táo'];
+    let TT = ['狗','猫','门','书','桌子','苹果'];
+    let result='';
+    let dichtu = document.getElementById('dichtu').value;
+    let dichsang = document.getElementById('dichsang').value;
+    let search = document.getElementById('search').value;
+        if (dichtu==dichsang) {
+            result=document.getElementById('tucandich').value;
+        } else if (dichtu=TA) {
+            for (let i = 0; i < TA.length; i++) {
 
 
-}
+            }
 
+
+        } document.getElementById("result").innerHTML = result;
+    }
 </script>
 </body>
 </html>

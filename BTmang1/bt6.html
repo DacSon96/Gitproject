@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm V</title>
+</head>
+<body>
+<script>
+    let a=[];
+    for (let i = 0; i < 10; i++) {
+        a[i]=parseInt(prompt("Nhập phần tử thứ "+(i+1)+" :"));
+    }
+    let V=parseInt(prompt("Nhập số V cần tìm"));
+    let index=a.indexOf(V);
+    if (index!=-1) {
+        alert("V nằm trong mảng");
+    } else {
+        alert("V không nằm trong mảng");
+    }
+</script>
+</body>
+</html>

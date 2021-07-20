@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function func1(a){
+        if(a == 2)
+            return 2;
+        return a * func1(a - 1);
+    }
+    let a= func1(5);
+    alert(a);
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n=parseInt(prompt("Nhập số phần tử hai chuỗi"));
+    let a=[];
+    let b=[];
+    let dem=0;
+    for (let i = 0; i <n ; i++) {
+        a[i]=prompt("Nhập phần tử "+(i+1)+" của chuỗi 1");
+    }
+    for (let i = 0; i <n ; i++) {
+        b[i]=prompt("Nhập phần tử "+(i+1)+" của chuỗi 2");
+    }
+    for (let i = 0; i < n; i++) {
+        if (a[i]==b[i]) {
+            dem++;
+        }
+    }
+    if (dem==n) {
+        alert('Hai chuỗi giống nhau');
+    } else
+        alert("Hai chuỗi khác nhau");
+
+</script>
+</body>
+</html>

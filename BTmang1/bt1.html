@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Title</title>
+</head>
+<body>
+<form name="f">
+  <textarea name="txt" cols="40" rows="10" onkeydown="typeText();"></textarea>
+  <script>
+    let a = ['T','ô','i',' ','l','à',' ','m','ộ','t',' ','đ','ứ','a',' ','n','g','ố','c','!'];
+    let b='';
+    function typeText() {
+      t = document.f.txt.value;
+      j = t.length;
+      if (j>=0) {
+        for (let i = 0; i < j; i++) {
+          b+=a[i];
+          if (i >21) {
+            document.f.txt.value = "";
+            b = "";
+          }
+        }
+      }
+      document.f.txt.value = b;
+      b="";
+      setTimeout("typeText()", 1);
+    }
+  </script>
+</form>
+</body>
+</html>

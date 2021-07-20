@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=[];
+    let max=0;
+    let vitrimax=0;
+    for (let i = 0;  i <10 ; i++) {
+        a[i]=parseInt(prompt("Nhập "+(10-i)+" phần tử khác nhau"));
+        for (let j = 0; j <i; j++) {
+            if (a[j]==a[i]) {
+                alert('Có phần tử trùng nhau trùng nhau');
+                alert('Mời nhập lại');
+                i=i-1;
+            }
+        }
+
+        if (a[i]>=max) {
+            max=a[i];
+            vitrimax=i;
+        }
+    }
+    alert("Phần tử có giá trị lớn nhất là "+max+" nằm ở vị trí thứ "+(vitrimax+1));
+</script>
+</body>
+</html>

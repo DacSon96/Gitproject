@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sắp xếp mảng giảm dần</title>
+</head>
+<body>
+<script>
+  let a=[];
+  let b=0;
+  let c=0;
+  for (let i = 0; i < 10; i++) {
+    a[i]=parseInt(prompt("Nhập phần tử thứ "+(i+1)+" :"));
+  }
+  for (let j = 1; j <10 ; j++) {
+    if  (a[j]>a[j-1]) {
+      b=a[j-1];
+      a[j-1]=a[j];
+      a[j]=b;
+      j=0;
+    }
+    console.log(a);
+  }
+  alert("Mảng sau khi sắp xếp là: "+a);
+</script>
+</body>
+</html>

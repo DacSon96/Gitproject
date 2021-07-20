@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=[];
+    let dem='';
+    let count=0;
+    for (let i = 0; i < 10; i++) {
+        a[i]=parseInt(prompt("Nhập phần tử của mảng"));
+        if (a[i]>=10) {
+            count++;
+            dem+=a[i]+',';
+        }
+    }alert('Có ' +count+' số lơn hơn 10 là: '+dem);
+</script>
+</body>
+</html>

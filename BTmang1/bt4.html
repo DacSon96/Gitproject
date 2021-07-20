@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n=parseInt(prompt("Nhập vào số phần tử của mảng: "));
+    let p=0;
+    let a=[];
+    let b;
+    for (let i = 0; i < n; i++) {
+        a[i]=parseInt(prompt("Nhập phần tử thứ "+(1+i)+" :"));
+    }
+    b=a.reverse().join();
+    alert("Mảng sau khi đảo ngược là: "+b);
+</script>
+</body>
+</html>
