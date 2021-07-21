@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function timmin(a) {
+        let min=a[1];
+        for (let i = 0; i <a.length ; i++) {
+            if (a[i]<min) {
+                min=a[i];
+            }
+        }return min;
+    }
+    let a=[];
+    for (let i = 0; i < 3; i++) {
+        a[i]=parseInt(prompt("Nhập số nguyên bất kì: "));
+    }
+    let min=timmin(a);
+    alert("Min là: "+min);
+</script>
+</body>
+</html>

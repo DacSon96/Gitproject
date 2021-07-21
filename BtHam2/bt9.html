@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function search(a,b) {
+        let dem=0;
+        for (let i = 0; i < a.length; i++) {
+            if (b==a[i]) {
+                dem++;
+            }
+        }if (dem==0) {
+            dem=-1;
+        } return dem;
+    }
+    let a=[3,4,5,5,5];
+    let b=1;
+    let search1=search(a,b);
+    if (search1==-1) {
+        alert("Không nằm trong mảng ");
+    } else {
+        alert("Xuất hiện "+search1+" lần trong mảng");
+    }
+</script>
+</body>
+</html>

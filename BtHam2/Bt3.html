@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function tinhGiaiThua(a) {
+        let result=1;
+        for (let i = 1; i <= a; i++) {
+            result=result*i;
+        } return result;
+    }
+    let a=parseInt(prompt("Nhập số nguyên bất kỳ: "));
+    let giaithua=tinhGiaiThua(a);
+    alert("Giai thừa là: "+giaithua);
+</script>
+</body>
+</html>

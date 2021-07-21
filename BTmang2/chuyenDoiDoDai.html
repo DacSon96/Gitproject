@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function footToMetter(footlengh) {
+        meterlengh = footlengh * 0.305;
+        return meterlengh;
+    }
+    function metterToFoot(meterlengh) {
+        footlengh=meterlengh*3.279;
+        return footlengh;
+    }
+    let a=parseInt(prompt("Nhập độ dài meter"));
+    alert("Độ dài sang foot là: "+metterToFoot(a));
+    let b=parseInt(prompt("Nhập độ dài feet là"));
+    alert("Độ dài sang meter là: "+footToMetter(a));
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>
+  <label>Nhập số</label>
+  <input type="number" placeholder="Number" oninput="numPlus(this.value)">
+</p>
+<p>Kết quả: <span id="result"></span></p>
+<script>
+  function numPlus(valNum) {
+    valNum = parseFloat(valNum);
+    document.getElementById("result").innerHTML = valNum + 1;
+  }
+</script>
+</body>
+</html>
