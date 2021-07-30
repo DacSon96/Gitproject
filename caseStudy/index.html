@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Puzzle Game</title>
+    <style type="text/css">
+        table {text-align: center}
+        table{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        body {background-image: url("theme.png")}
+        td {font-size: 32px}
+        p  {text-align: center;font-size: 32px;color: #d61b06;
+        }
+        h1 {text-align: center;
+        }
+    </style>
+</head>
+<body onload="startGame()">
+    <div>
+        <h1><img src="tieude.png"></h1>
+        <table>
+            <tr>
+                <td></td>
+                <td><p style="text-align: right" id="countDown">Thời gian</p></td>
+                <td><p style="text-align: left">(S)</p></td>
+            </tr>
+            <tr>
+                <td><img id='0' src="images/cg.png"></td>
+                <td><img id='1' src="images/cg.png"></td>
+                <td><img id='2' src="images/cg.png"></td>
+                <td><img id='3' src="images/cg.png"></td>
+            </tr>
+            <tr>
+                <td><img id='4' src="images/cg.png"></td>
+                <td><img id='5' src="images/cg.png"></td>
+                <td><img id='6' src="images/cg.png"></td>
+                <td><img id='7' src="images/cg.png"></td>
+            </tr>
+            <tr>
+                <td><img id='8' src="images/cg.png"></td>
+                <td><img id='9' src="images/cg.png"></td>
+                <td><img id='10' src="images/cg.png"></td>
+                <td><img id='11' src="images/cg.png"></td>
+            </tr>
+            <tr>
+                <td><img id='12' src="images/cg.png"></td>
+                <td><img id='13' src="images/cg.png"></td>
+                <td><img id='14' src="images/cg.png"></td>
+                <td><img id='15' src="images/cg.png"></td>
+            </tr>
+            <tr>
+                <td>Score:</td>
+                <td id="score"></td>
+                <td>Moves: </td>
+                <td id="moves"></td>
+            </tr>
+        </table>
+        <form>
+            <table>
+                <tbody>
+
+                </tbody>
+            </table>
+        </form>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
