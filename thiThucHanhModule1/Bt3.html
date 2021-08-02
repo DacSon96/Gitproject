@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đếm kí tự nguyên âm</title>
+</head>
+<body>
+<script>
+    function vowelsIterativeCheck(str) {
+        let count = str.match(/[aeiou]/gi);
+        if (count) {
+            let mess = "Chuỗi bao gồm " + count.length + " nguyên âm";
+            return mess;
+        } else {
+            return false;
+        }
+    }
+    let str = vowelsIterativeCheck("Raising the bar");
+    alert(str);
+</script>
+</body>
+</html>

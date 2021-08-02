@@ -7,8 +7,6 @@ let imgGame=['images/1.png','images/2.png','images/3.png','images/4.png','images
 let previousClick=0;
 let timeOut=30;
 let topPlayer=[];
-let plag=0;
-
 function startGame() {
     for (let i = 0; i < 16; i++) {
             let image = document.getElementById(i);
@@ -22,7 +20,7 @@ function startGame() {
 function newGame(){
     let score=0;
     let moves=0;
-    let attempt=0;
+    // let attempt=0;
     document.getElementById('score').innerHTML=score;
     document.getElementById('moves').innerHTML=moves;
     // // for (let i = 0; i <16 ; i++) {
@@ -47,7 +45,7 @@ function newGame(){
 function imgClick() {
     let id=this.id;
     if (imgStatus[id]===-1){
-        return;;
+        return;
     }
     if (attempt ===0){
         let clickedImg=imgPosition[id];
@@ -55,17 +53,17 @@ function imgClick() {
         attempt=1;
         previousClick=id;
         document.getElementById("moves").innerHTML = 1 + moves++;
-        if (moves==1) {
+        if (moves===1) {
             countDown();
         }
         return;
     }
     if (attempt===1) {
-        if (id != previousClick) {
+        if (id !== previousClick) {
             let clickedImg = imgPosition[id];
             this.src = imgGame[clickedImg];
 
-            if (imgPosition[id] != imgPosition[previousClick]) {
+            if (imgPosition[id] !== imgPosition[previousClick]) {
                 setTimeout(function() {
                     document.getElementById(previousClick).src = 'images/cg.png';
                     document.getElementById(id).src = 'images/cg.png';
@@ -118,8 +116,8 @@ function leaderBoard() {
         }
     }
 }
-function showLeaderBoard() {
-    let a=document.getElementById()
-}
+// function showLeaderBoard() {
+//     let a=document.getElementById()
+// }
 
 

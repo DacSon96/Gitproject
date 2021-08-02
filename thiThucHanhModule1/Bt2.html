@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm phần tử cho trước</title>
+</head>
+<body>
+<script>
+    function search(a, arr) {
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === a) {
+                let mess = "Giá trị cần tìm có nằm trong mảng ở vị trí: " + i;
+                count++;
+                return mess;
+            }
+        }
+        if (count === 0) {
+            let mess = "Không có giá trị cần tìm trong mảng ";
+            return mess;
+        }
+    }
+
+    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    let a = parseInt(prompt("Nhập vào giá trị cần tìm: "));
+    let result = search(a, arr);
+    alert(result);
+</script>
+</body>
+</html>
